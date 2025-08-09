@@ -1,209 +1,278 @@
-
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RONITH REDDY PRODDUTURI – Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- Theme color for mobile address bar -->
-  <meta name="theme-color" content="#0f172a">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronith Reddy Prodduturi - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Hero -->
-  <header id="intro">
-    <div class="container">
-      <h1>RONITH REDDY PRODDUTURI</h1>
-      <p class="lead">
-        Data Engineer & ML Engineer — Python, PySpark, SQL, Spark, AWS • Scalable pipelines, real-time analytics, ML deployment
-      </p>
-      <p class="stack" style="margin-top:16px;">
-        <a class="cta" href="ASSETS/Ronith_Reddy_Resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
-        <a class="cta secondary" href="#projects">View Projects</a>
-      </p>
-    </div>
-  </header>
-
-  <!-- Nav -->
-  <nav>
-    <div class="container">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#certs">Certifications</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="card">
-        <p>
-          Data Engineer and Machine Learning Engineer with 3+ years of experience building scalable data pipelines,
-          real-time analytics systems, and AI-powered apps. Skilled in Python, PySpark, SQL, Apache Spark, and AWS with
-          ETL/ELT workflows, ML model deployment, and data visualization. Highlights: processed 15TB+ daily, improved
-          fraud detection accuracy by 30%, and reduced model deployment cycles by 40% through automation.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="card">
-        <div class="timeline">
-
-          <div class="entry">
-            <h3>Full Stack Python Developer — PayPal, San Jose, CA</h3>
-            <span class="date">Mar 2025 – Present</span>
+    <header>
+        <nav>
             <ul>
-              <li>Designed & deployed Flask microservices (SQLAlchemy, OOP), sustaining 99.9% uptime.</li>
-              <li>Automated CI/CD in Azure DevOps with Ansible + PyTest → deployment issues ↓ 40%.</li>
-              <li>Optimized SQL/NoSQL + App Insights → API & dashboard latency ↓ 50%.</li>
-              <li>Built Spark-driven ETL → Tableau KPIs → multi-hour reports → on-demand analytics.</li>
-              <li>Optimized Spark parallelism → batch feature gen speed ↑ 40%.</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-          </div>
+        </nav>
+    </header>
 
-          <div class="entry">
-            <h3>Full Stack Python Developer — Vanguard (Remote)</h3>
-            <span class="date">Apr 2024 – Feb 2025</span>
-            <ul>
-              <li>FastAPI/GraphQL fraud services with real-time ML scoring → confirmed fraud ↓ 30%.</li>
-              <li>Migrated fraud data to Snowflake via AWS Glue → training prep time ↓ 45%.</li>
-              <li>AWS Lambda + DynamoDB inference → &lt;300ms prediction latency.</li>
-              <li>React dashboards for streaming ML outputs → analyst productivity ↑ 25%.</li>
-              <li>Kubernetes + Jenkins/GitHub Actions → zero-downtime releases; MLflow for experiments.</li>
+    <section id="home">
+        <h1>Ronith Reddy Prodduturi</h1>
+        <p>Data Engineer and Machine Learning Engineer</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="container">
+            <p>Data Engineer and Machine Learning Engineer with 3+ years of experience building scalable data pipelines, real-time analytics systems, and AI-powered applications. Skilled in Python, PySpark, SQL, Apache Spark, and AWS, with expertise in ETL/ELT workflows, ML model deployment, and data visualization. Proven track record in processing 15TB+ of data daily, improving fraud detection accuracy by 30%, and reducing model deployment cycles by 40% through automation.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="container">
+            <div class="experience-item">
+                <h3>Full Stack Python Developer - PayPal</h3>
+                <p>San Jose, CA | Mar 2025 - Present</p>
+                <ul>
+                    <li>Designed and deployed Flask-based microservices leveraging SQLAlchemy and OOP patterns, sustaining 99.9% uptime while supporting high-volume data transactions.</li>
+                    <li>Automated CI/CD pipelines in Azure DevOps with Ansible, integrating PyTest and functional testing to reduce deployment issues by 40%.</li>
+                    <li>Tuned SQL and NoSQL queries monitored through Azure App Insights, leading to a 50% cut in API and dashboard latency for end users.</li>
+                    <li>Delivered real-time KPI dashboards in Tableau sourced from Spark-driven ETL jobs, transforming multi-hour reporting processes into on-demand analytics.</li>
+                    <li>Built Python-powered data validation and cleansing workflows, improving ETL dataset accuracy by 35% for downstream analytics.</li>
+                    <li>Optimized Apache Spark job configurations for parallelism, boosting batch data processing speed by over 40% in ML feature generation tasks.</li>
+                    <li>Presented query optimization metrics and data throughput insights to cross-functional teams, prompting infrastructure adjustments that increased efficiency by 25%.</li>
+                    <li>Produced clear documentation outlining ML data workflows, enabling faster onboarding and ensuring consistency in analytics processes.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Full Stack Python Developer - Vanguard</h3>
+                <p>Remote | Apr 2024 - Feb 2025</p>
+                <ul>
+                    <li>Delivered FastAPI and GraphQL fraud detection services that processed thousands of concurrent user requests, cutting confirmed fraud incidents by 30% through real-time ML scoring.</li>
+                    <li>Reduced model training preparation time by 45% by migrating fraud datasets to Snowflake data lakes with AWS Glue ETL workflows, streamlining the ML pipeline.</li>
+                    <li>Achieved sub-300ms prediction latency for anomaly detection by deploying AWS Lambda applications backed by DynamoDB and containerized inference endpoints.</li>
+                    <li>Boosted analyst productivity by 25% by developing React.js dashboards that visualized streaming ML outputs from Python APIs for instant risk assessment.</li>
+                    <li>Maintained 24/7 service availability by orchestrating Kubernetes-based deployments via Jenkins and GitHub Actions, eliminating production downtime during releases.</li>
+                    <li>Increased stakeholder trust in ML predictions by implementing SHAP and LIME explainability, enabling clear insight into model decision-making.</li>
+                    <li>Elevated deployment quality by coaching junior engineers on Terraform automation, AWS Lambda optimization, and secure API design, leading to a 20% improvement in release success.</li>
+                    <li>Ensured reproducible ML model performance by establishing MLflow-based version control and experiment tracking in collaboration with data science teams.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Python Developer - Bayer</h3>
+                <p>India | Oct 2020 - Dec 2022</p>
+                <ul>
+                    <li>Delivered optimized React.js and Node.js front-end modules integrated with Django and Flask backends over GraphQL, enabling customers to complete transactions 20% faster through reduced API response times.</li>
+                    <li>Architected a Django-powered analytics framework with ML-driven insights, leveraging AWS ECS and Lambda to handle over 15TB of daily transaction data, resulting in a 35% increase in throughput.</li>
+                    <li>Orchestrated real-time fraud detection by deploying Dockerized Flask microservices with SQLAlchemy to Kubernetes, achieving sub-second predictions via SageMaker and ensuring seamless scalability.</li>
+                    <li>Transformed multi-source transactional data pipelines using PySpark to load into Snowflake data lakes, cutting batch latency by 40% and making ML features available ahead of schedule for model training.</li>
+                    <li>Enhanced deployment reliability by implementing Jenkins and Ansible pipelines with PyTest validation, which reduced production release issues by 25% and improved post-deployment stability.</li>
+                    <li>Improved schema consistency and indexing for MySQL and Redis ETL jobs, raising prediction accuracy of downstream ML models by 18% and eliminating recurring data integration errors.</li>
+                    <li>Led a cross-functional team of five to operationalize ML models with SageMaker and MLflow tracking, reducing deployment cycles by 40% and maintaining reproducibility across all releases.</li>
+                    <li>Designed monitoring dashboards with Prometheus and Grafana to track API health and latency, sustaining 99.99% uptime for core payment services and enabling proactive incident handling.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education & Certifications</h2>
+        <div class="container">
+            <div class="education-item">
+                <h3>Master of Science in Technology Management</h3>
+                <p>Lindsey Wilson University | KY</p>
+                <p>Aug 2023 - Dec 2024</p>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor of Technology in Computer Science</h3>
+                <p>GITAM University | India</p>
+                <p>Jun 2018 - Jun 2022</p>
+            </div>
+            <div class="education-item">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>AWS Certified Data Engineer – Associate</li>
+                    <li>AWS Certified Solutions Architect - Associate</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="container">
+            <ul class="skills-list">
+                <li>Programming & Frameworks
+                    <ul class="skills-sublist">
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>PySpark</li>
+                        <li>Apache Spark</li>
+                        <li>Django</li>
+                        <li>Flask</li>
+                        <li>FastAPI</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>C++</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </li>
+                <li>Data Engineering & Big Data
+                    <ul class="skills-sublist">
+                        <li>ETL/ELT Pipelines</li>
+                        <li>Data Lakes</li>
+                        <li>Data Warehousing</li>
+                        <li>Snowflake</li>
+                        <li>Amazon Redshift</li>
+                        <li>Google BigQuery</li>
+                        <li>Apache Airflow</li>
+                        <li>AWS Glue</li>
+                        <li>Apache Kafka</li>
+                        <li>Real-Time & Batch Data Processing</li>
+                    </ul>
+                </li>
+                <li>Databases
+                    <ul class="skills-sublist">
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>DynamoDB</li>
+                        <li>Redis</li>
+                        <li>Oracle</li>
+                        <li>SQL Server</li>
+                        <li>NoSQL Databases</li>
+                    </ul>
+                </li>
+                <li>Cloud & DevOps
+                    <ul class="skills-sublist">
+                        <li>AWS (ECS, Lambda, S3, CloudFront, API Gateway, SageMaker)</li>
+                        <li>Azure DevOps</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Helm</li>
+                        <li>Terraform</li>
+                        <li>Jenkins</li>
+                        <li>Ansible</li>
+                        <li>GitHub Actions</li>
+                        <li>Infrastructure as Code (IaC)</li>
+                        <li>CI/CD Pipelines</li>
+                    </ul>
+                </li>
+                <li>Machine Learning & MLOps
+                    <ul class="skills-sublist">
+                        <li>scikit-learn</li>
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>Amazon SageMaker</li>
+                        <li>Model Deployment</li>
+                        <li>Feature Engineering</li>
+                        <li>Model Monitoring</li>
+                        <li>A/B Testing</li>
+                        <li>Experiment Tracking (MLflow)</li>
+                    </ul>
+                </li>
+                <li>Analytics & Visualization
+                    <ul class="skills-sublist">
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Tableau</li>
+                        <li>Power BI</li>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                        <li>Plotly</li>
+                        <li>KPI Dashboards</li>
+                        <li>Statistical Analysis</li>
+                        <li>Data Storytelling</li>
+                    </ul>
+                </li>
+                <li>Testing & Quality Assurance
+                    <ul class="skills-sublist">
+                        <li>PyTest</li>
+                        <li>Selenium</li>
+                        <li>Unit Testing</li>
+                        <li>Integration Testing</li>
+                        <li>TDD/BDD</li>
+                        <li>Debugging</li>
+                        <li>Code Review</li>
+                    </ul>
+                </li>
+                <li>Methodologies & Architecture
+                    <ul class="skills-sublist">
+                        <li>Agile/Scrum</li>
+                        <li>Kanban</li>
+                        <li>REST API Design</li>
+                        <li>OOP</li>
+                        <li>MVC/MVT Architecture</li>
+                        <li>Microservices Architecture</li>
+                        <li>Event-Driven Architecture</li>
+                    </ul>
+                </li>
             </ul>
-          </div>
-
-          <div class="entry">
-            <h3>Python Developer — Bayer, India</h3>
-            <span class="date">Oct 2020 – Dec 2022</span>
-            <ul>
-              <li>React/Node modules on Django/Flask (GraphQL) → checkout time ↓ 20%.</li>
-              <li>PySpark → Snowflake data lake; 15TB+/day on ECS/Lambda → throughput ↑ 35%.</li>
-              <li>Dockerized Flask microservices + SageMaker on K8s → sub-second predictions.</li>
-              <li>Jenkins/Ansible + PyTest → release issues ↓ 25%, stability ↑.</li>
-              <li>Prometheus/Grafana monitoring → 99.99% uptime for core payment services.</li>
-            </ul>
-          </div>
-
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="card">
-        <ul>
-          <li><strong>Programming:</strong> Python, SQL, PySpark, C++, JS/TS</li>
-          <li><strong>Frameworks:</strong> Flask, FastAPI, Django, React, Node</li>
-          <li><strong>Data Eng:</strong> Spark, Kafka, Airflow, Glue, ETL/ELT, Data Lakes/Warehouses (Snowflake, Redshift, BigQuery)</li>
-          <li><strong>Cloud & DevOps:</strong> AWS (ECS, Lambda, S3, CloudFront, API GW, SageMaker), Docker, Kubernetes, Terraform, Jenkins, GitHub Actions</li>
-          <li><strong>ML & MLOps:</strong> scikit-learn, TensorFlow, PyTorch, SageMaker, MLflow, model monitoring, A/B testing</li>
-          <li><strong>Viz & Analytics:</strong> Tableau, Power BI, Pandas/NumPy, Matplotlib/Plotly</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects">
-
-        <div class="project card">
-          <h3>Fraud Detection & Prevention System</h3>
-          <ul>
-            <li>PySpark + Snowflake + scikit-learn over 10TB/day → fraudulent activity ↓ 30%.</li>
-            <li>SageMaker CI/CD → releases cut from 2 weeks to 3 days; reproducible models.</li>
-            <li>FastAPI + Power BI → live anomaly & risk scoring dashboards.</li>
-          </ul>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="container">
+            <div class="project-item">
+                <h3>Fraud Detection & Prevention System</h3>
+                <ul>
+                    <li>Developed PySpark and Snowflake workflows with scikit-learn models to scan 10TB+ transaction data daily, lowering fraudulent activity by 30% through predictive scoring.</li>
+                    <li>Automated AWS SageMaker deployments with CI/CD pipelines, shortening release cycles from two weeks to three days while ensuring model reproducibility.</li>
+                    <li>Connected FastAPI microservices to live Power BI dashboards, giving fraud teams real-time insight into transaction anomalies and risk scores.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>IoT Health Monitoring Platform</h3>
+                <ul>
+                    <li>Implemented AWS Kinesis and Lambda pipelines for ingesting 1M+ sensor events daily, ensuring low-latency data flow to hospital analytics systems.</li>
+                    <li>Applied Python-based anomaly detection algorithms to identify early signs of health deterioration, achieving 92% classification accuracy.</li>
+                    <li>Built React.js interfaces displaying live patient vitals, enabling medical teams to act on alerts instantly.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Real-Time Language Translator AI App</h3>
+                <ul>
+                    <li>Created a multilingual translation engine with Whisper API, Flask, and React Native, supporting 12 languages under 300ms latency for spoken text.</li>
+                    <li>Set up automated PyTest pipelines to maintain translation accuracy within 0.2% deviation during updates.</li>
+                    <li>Deployed AWS Lambda and API Gateway backend for scalable, cost-efficient real-time processing.</li>
+                </ul>
+            </div>
         </div>
+    </section>
 
-        <div class="project card">
-          <h3>IoT Health Monitoring Platform</h3>
-          <ul>
-            <li>AWS Kinesis + Lambda for 1M+ sensor events/day; low-latency pipelines.</li>
-            <li>Python anomaly detection → 92% classification accuracy.</li>
-            <li>React UI for live vitals and alerting.</li>
-          </ul>
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="container">
+            <p>Location: Santa Clara, CA</p>
+            <p>Phone: +1 629-273-8318</p>
+            <p>Email: ronith0306@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ronith-reddy-prodduturi">www.linkedin.com/in/ronith-reddy-prodduturi</a> (update with actual link if different)</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
+    </section>
 
-        <div class="project card">
-          <h3>Real-Time Language Translator AI App</h3>
-          <ul>
-            <li>Whisper API + Flask + React Native; 12 languages, &lt;300ms latency.</li>
-            <li>PyTest automation → accuracy within 0.2% during updates.</li>
-            <li>AWS Lambda + API Gateway for elastic, cost-efficient compute.</li>
-          </ul>
-        </div>
+    <footer>
+        <p>&copy; 2025 Ronith Reddy Prodduturi. All rights reserved.</p>
+    </footer>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education">
-    <div class="container">
-      <h2>Education</h2>
-      <div class="card stack">
-        <p><strong>M.S. Technology Management</strong> — Lindsey Wilson University, KY (Aug 2023 – Dec 2024)</p>
-        <p><strong>B.Tech Computer Science</strong> — GITAM University, India (Jun 2018 – Jun 2022)</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certs">
-    <div class="container">
-      <h2>Certifications</h2>
-      <div class="card">
-        <ul class="stack">
-          <li>AWS Certified Data Engineer – Associate</li>
-          <li>AWS Certified Solutions Architect – Associate</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <div class="card">
-        <p>Santa Clara, CA • +1 (629) 273-8318 •
-          <a href="mailto:ronith0306@gmail.com">ronith0306@gmail.com</a>
-        </p>
-        <p>
-          <a href="https://www.linkedin.com/in/ronithreddy03/" target="_blank" rel="noopener">LinkedIn</a> •
-          <a href="ASSETS/Ronith_Reddy_Resume.pdf" target="_blank" rel="noopener">Download Résumé (PDF)</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Script -->
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
