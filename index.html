@@ -1,278 +1,401 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ronith Reddy Prodduturi - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <!-- ======= Google Tag Manager ======= -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
+  <!-- ======= End Google Tag Manager ======= -->
+
+  <link rel="icon" type="image/png" href="assets/img/logo.png"/>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ronith Reddy Prodduturi | Portfolio</title>
+  <meta content="Data Engineer & ML Engineer — Python, PySpark, SQL, Spark, AWS, ETL/ELT, MLOps" name="description">
+  <meta content="Ronith Reddy Prodduturi, Data Engineer, Machine Learning Engineer, Python, Spark, AWS, ETL, MLOps" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:400,600,700|Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Preloads (faster first paint) -->
+  <link rel="preload" as="video" href="assets/img/background/binary_rain.mp4">
+  <link rel="preload" as="style" href="assets/css/style.css">
+  <link rel="preload" as="font" href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLPTedw.woff2" crossorigin>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date()); gtag('config', 'UA-169007209-3');
+  </script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- ======= GTM (noscript) ======= -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <section id="home">
-        <h1>Ronith Reddy Prodduturi</h1>
-        <p>Data Engineer and Machine Learning Engineer</p>
-    </section>
+  <!-- ======= Splash / Intro ======= -->
+  <div id="splash">
+    <!-- SVG monogram for crisp initials -->
+    <img src="assets/img/brand/rrp.svg" alt="RRP" class="splash-svg" />
+  </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="container">
-            <p>Data Engineer and Machine Learning Engineer with 3+ years of experience building scalable data pipelines, real-time analytics systems, and AI-powered applications. Skilled in Python, PySpark, SQL, Apache Spark, and AWS, with expertise in ETL/ELT workflows, ML model deployment, and data visualization. Proven track record in processing 15TB+ of data daily, improving fraud detection accuracy by 30%, and reducing model deployment cycles by 40% through automation.</p>
+  <!-- Background video -->
+  <video
+    class="background-image"
+    src="assets/img/background/binary_rain.mp4"
+    muted
+    playsinline
+    preload="auto"
+    loop
+    autoplay
+    poster="assets/img/background/poster.jpg">
+  </video>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-tops">
+    <div class="container">
+      <h1 class="reveal-up"><a href="index.html">Ronith Reddy Prodduturi</a></h1>
+      <h2 class="reveal-up" style="color:#fff">I am <span class="typing" style="color:#12D640"></span></h2>
+
+      <nav class="nav-menu d-none d-lg-block reveal-up">
+        <ul>
+          <li class="active"><a href="#header"><span>Home</span></a></li>
+          <li><a href="#about"><span>About</span></a></li>
+          <li><a href="#experience"><span>Experience</span></a></li>
+          <li><a href="#projects"><span>Projects</span></a></li>
+          <li><a href="#skills"><span>Skills</span></a></li>
+          <li><a href="#education"><span>Education</span></a></li>
+          <li><a href="#contact"><span>Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links reveal-up">
+        <a href="mailto:ronith0306@gmail.com" target="_blank" class="gmail"><i class="bx bxl-google"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+
+      <div class="mt-3 reveal-up" style="color:#cfd8dc; font-size:14px;">
+        Santa Clara, CA • <a href="tel:+16292738318" style="color:#cfd8dc; text-decoration:underline;">+1 (629) 273‑8318</a> •
+        <a href="mailto:ronith0306@gmail.com" style="color:#cfd8dc; text-decoration:underline;">ronith0306@gmail.com</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= About ======= -->
+  <section id="about" class="about reveal-up">
+    <div class="about-me container">
+      <div class="section-title"><h2>About Me</h2></div>
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="assets/img/about/profile.jpg" class="img-fluid" alt="Profile">
         </div>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="container">
-            <div class="experience-item">
-                <h3>Full Stack Python Developer - PayPal</h3>
-                <p>San Jose, CA | Mar 2025 - Present</p>
-                <ul>
-                    <li>Designed and deployed Flask-based microservices leveraging SQLAlchemy and OOP patterns, sustaining 99.9% uptime while supporting high-volume data transactions.</li>
-                    <li>Automated CI/CD pipelines in Azure DevOps with Ansible, integrating PyTest and functional testing to reduce deployment issues by 40%.</li>
-                    <li>Tuned SQL and NoSQL queries monitored through Azure App Insights, leading to a 50% cut in API and dashboard latency for end users.</li>
-                    <li>Delivered real-time KPI dashboards in Tableau sourced from Spark-driven ETL jobs, transforming multi-hour reporting processes into on-demand analytics.</li>
-                    <li>Built Python-powered data validation and cleansing workflows, improving ETL dataset accuracy by 35% for downstream analytics.</li>
-                    <li>Optimized Apache Spark job configurations for parallelism, boosting batch data processing speed by over 40% in ML feature generation tasks.</li>
-                    <li>Presented query optimization metrics and data throughput insights to cross-functional teams, prompting infrastructure adjustments that increased efficiency by 25%.</li>
-                    <li>Produced clear documentation outlining ML data workflows, enabling faster onboarding and ensuring consistency in analytics processes.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Full Stack Python Developer - Vanguard</h3>
-                <p>Remote | Apr 2024 - Feb 2025</p>
-                <ul>
-                    <li>Delivered FastAPI and GraphQL fraud detection services that processed thousands of concurrent user requests, cutting confirmed fraud incidents by 30% through real-time ML scoring.</li>
-                    <li>Reduced model training preparation time by 45% by migrating fraud datasets to Snowflake data lakes with AWS Glue ETL workflows, streamlining the ML pipeline.</li>
-                    <li>Achieved sub-300ms prediction latency for anomaly detection by deploying AWS Lambda applications backed by DynamoDB and containerized inference endpoints.</li>
-                    <li>Boosted analyst productivity by 25% by developing React.js dashboards that visualized streaming ML outputs from Python APIs for instant risk assessment.</li>
-                    <li>Maintained 24/7 service availability by orchestrating Kubernetes-based deployments via Jenkins and GitHub Actions, eliminating production downtime during releases.</li>
-                    <li>Increased stakeholder trust in ML predictions by implementing SHAP and LIME explainability, enabling clear insight into model decision-making.</li>
-                    <li>Elevated deployment quality by coaching junior engineers on Terraform automation, AWS Lambda optimization, and secure API design, leading to a 20% improvement in release success.</li>
-                    <li>Ensured reproducible ML model performance by establishing MLflow-based version control and experiment tracking in collaboration with data science teams.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Python Developer - Bayer</h3>
-                <p>India | Oct 2020 - Dec 2022</p>
-                <ul>
-                    <li>Delivered optimized React.js and Node.js front-end modules integrated with Django and Flask backends over GraphQL, enabling customers to complete transactions 20% faster through reduced API response times.</li>
-                    <li>Architected a Django-powered analytics framework with ML-driven insights, leveraging AWS ECS and Lambda to handle over 15TB of daily transaction data, resulting in a 35% increase in throughput.</li>
-                    <li>Orchestrated real-time fraud detection by deploying Dockerized Flask microservices with SQLAlchemy to Kubernetes, achieving sub-second predictions via SageMaker and ensuring seamless scalability.</li>
-                    <li>Transformed multi-source transactional data pipelines using PySpark to load into Snowflake data lakes, cutting batch latency by 40% and making ML features available ahead of schedule for model training.</li>
-                    <li>Enhanced deployment reliability by implementing Jenkins and Ansible pipelines with PyTest validation, which reduced production release issues by 25% and improved post-deployment stability.</li>
-                    <li>Improved schema consistency and indexing for MySQL and Redis ETL jobs, raising prediction accuracy of downstream ML models by 18% and eliminating recurring data integration errors.</li>
-                    <li>Led a cross-functional team of five to operationalize ML models with SageMaker and MLflow tracking, reducing deployment cycles by 40% and maintaining reproducibility across all releases.</li>
-                    <li>Designed monitoring dashboards with Prometheus and Grafana to track API health and latency, sustaining 99.99% uptime for core payment services and enabling proactive incident handling.</li>
-                </ul>
-            </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content">
+          <p>
+            I’m a Data Engineer & Machine Learning Engineer with 3+ years of experience building scalable data pipelines,
+            real‑time analytics systems, and AI‑powered applications. I work across Python, PySpark, SQL, Apache Spark, and AWS,
+            specializing in ETL/ELT workflows, ML model deployment, and data visualization. Recent wins include processing 15TB+ of
+            data daily, improving fraud detection accuracy by 30%, and reducing model deployment cycles by 40% through automation.
+          </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="education">
-        <h2>Education & Certifications</h2>
-        <div class="container">
-            <div class="education-item">
-                <h3>Master of Science in Technology Management</h3>
-                <p>Lindsey Wilson University | KY</p>
-                <p>Aug 2023 - Dec 2024</p>
-            </div>
-            <div class="education-item">
-                <h3>Bachelor of Technology in Computer Science</h3>
-                <p>GITAM University | India</p>
-                <p>Jun 2018 - Jun 2022</p>
-            </div>
-            <div class="education-item">
-                <h3>Certifications</h3>
-                <ul>
-                    <li>AWS Certified Data Engineer – Associate</li>
-                    <li>AWS Certified Solutions Architect - Associate</li>
-                </ul>
-            </div>
+  <!-- ======= Experience ======= -->
+  <section id="experience" class="services reveal-up">
+    <div class="container">
+      <div class="section-title"><h2>Experience</h2></div>
+
+      <!-- PayPal -->
+      <div class="col-md-12 mt-4 mt-md-0 icon-box">
+        <img src="assets/img/experience/paypal.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90" alt="PayPal">
+        <h4 style="text-align:left;"><span style="color:#12d640">PayPal</span></h4>
+        <h5 style="text-align:left;"><em>Full Stack Python Developer</em></h5>
+        <span class="left" style="float:left;color:#fff;"><em>Mar 2025 – Present</em></span>
+        <span class="right" style="float:right;color:#fff;"><em>San Jose, CA</em></span><br><br>
+        <ul style="text-align:left;">
+          <li>Designed and deployed Flask microservices with SQLAlchemy & OOP, sustaining 99.9% uptime.</li>
+          <li>Automated CI/CD in Azure DevOps with Ansible + PyTest, cutting deployment issues by 40%.</li>
+          <li>Optimized SQL/NoSQL queries to halve API & dashboard latency (App Insights monitoring).</li>
+          <li>Real‑time KPI dashboards in Tableau via Spark ETL; multi‑hour reports → on‑demand analytics.</li>
+          <li>Python data validation/cleansing flows improved ETL accuracy by 35%.</li>
+          <li>Tuned Spark parallelism for feature gen, boosting batch speed 40%+.</li>
+          <li>Infra adjustments from query/throughput reviews increased efficiency by 25%.</li>
+          <li>Documented ML data workflows for faster onboarding & consistency.</li>
+        </ul>
+      </div>
+
+      <!-- Vanguard -->
+      <div class="col-md-12 mt-4 mt-md-0 icon-box">
+        <img src="assets/img/experience/vanguard.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90" alt="Vanguard">
+        <h4 style="text-align:left;"><span style="color:#12d640">Vanguard</span></h4>
+        <h5 style="text-align:left;"><em>Full Stack Python Developer</em></h5>
+        <span class="left" style="float:left;color:#fff;"><em>Apr 2024 – Feb 2025</em></span>
+        <span class="right" style="float:right;color:#fff;"><em>Remote</em></span><br><br>
+        <ul style="text-align:left;">
+          <li>FastAPI + GraphQL fraud services; real‑time ML scoring cut confirmed fraud by 30%.</li>
+          <li>Moved fraud datasets to Snowflake via AWS Glue; −45% model training prep time.</li>
+          <li>&lt;300ms anomaly predictions with Lambda + DynamoDB + containerized inference.</li>
+          <li>React dashboards for streaming ML outputs; analyst productivity +25%.</li>
+          <li>K8s deployments via Jenkins & GitHub Actions; zero‑downtime releases.</li>
+          <li>SHAP/LIME explainability increased trust in model decisions.</li>
+          <li>Mentored on Terraform, Lambda optimization, secure API design; +20% release success.</li>
+          <li>MLflow experiment/model versioning for reproducibility.</li>
+        </ul>
+      </div>
+
+      <!-- Bayer -->
+      <div class="col-md-12 mt-4 mt-md-0 icon-box">
+        <img src="assets/img/experience/bayer.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90" alt="Bayer">
+        <h4 style="text-align:left;"><span style="color:#12d640">Bayer</span></h4>
+        <h5 style="text-align:left;"><em>Python Developer</em></h5>
+        <span class="left" style="float:left;color:#fff;"><em>Oct 2020 – Dec 2022</em></span>
+        <span class="right" style="float:right;color:#fff;"><em>India</em></span><br><br>
+        <ul style="text-align:left;">
+          <li>React/Node + Django/Flask via GraphQL; checkout transactions 20% faster.</li>
+          <li>Django analytics on ECS + Lambda processed 15TB+/day; throughput +35%.</li>
+          <li>Dockerized Flask + SQLAlchemy on K8s; sub‑second fraud predictions via SageMaker.</li>
+          <li>PySpark → Snowflake pipelines; −40% batch latency; features ready earlier.</li>
+          <li>Jenkins + Ansible + PyTest; −25% production release issues.</li>
+          <li>MySQL/Redis schema/index improvements; model accuracy +18%.</li>
+          <li>Led 5‑person squad; SageMaker + MLflow; −40% deployment cycle time.</li>
+          <li>Prometheus/Grafana dashboards; 99.99% uptime for core services.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Projects ======= -->
+  <section id="projects" class="services reveal-up">
+    <div class="container">
+      <div class="section-title"><h2>Projects</h2></div>
+
+      <div class="row">
+        <div class="col-md-4 mt-4 mt-md-0 icon-box" style="padding-bottom:5px;">
+          <img style="padding:5px;" src="assets/img/projects/fraud.jpg" class="img-fluid" width="300" height="300" alt="Fraud">
+          <h5 style="padding:5px;color:#12d640"><strong>Fraud Detection &amp; Prevention</strong></h5>
+          <p style="padding:0 2px;color:#fff;">PySpark + Snowflake scanning 10TB+/day with scikit‑learn; −30% fraud via predictive scoring. SageMaker CI/CD reduced releases from 2 weeks to 3 days. Live risk via FastAPI → Power BI.</p>
         </div>
-    </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="container">
-            <ul class="skills-list">
-                <li>Programming & Frameworks
-                    <ul class="skills-sublist">
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>PySpark</li>
-                        <li>Apache Spark</li>
-                        <li>Django</li>
-                        <li>Flask</li>
-                        <li>FastAPI</li>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>React.js</li>
-                        <li>Node.js</li>
-                        <li>C++</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </li>
-                <li>Data Engineering & Big Data
-                    <ul class="skills-sublist">
-                        <li>ETL/ELT Pipelines</li>
-                        <li>Data Lakes</li>
-                        <li>Data Warehousing</li>
-                        <li>Snowflake</li>
-                        <li>Amazon Redshift</li>
-                        <li>Google BigQuery</li>
-                        <li>Apache Airflow</li>
-                        <li>AWS Glue</li>
-                        <li>Apache Kafka</li>
-                        <li>Real-Time & Batch Data Processing</li>
-                    </ul>
-                </li>
-                <li>Databases
-                    <ul class="skills-sublist">
-                        <li>PostgreSQL</li>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                        <li>DynamoDB</li>
-                        <li>Redis</li>
-                        <li>Oracle</li>
-                        <li>SQL Server</li>
-                        <li>NoSQL Databases</li>
-                    </ul>
-                </li>
-                <li>Cloud & DevOps
-                    <ul class="skills-sublist">
-                        <li>AWS (ECS, Lambda, S3, CloudFront, API Gateway, SageMaker)</li>
-                        <li>Azure DevOps</li>
-                        <li>Docker</li>
-                        <li>Kubernetes</li>
-                        <li>Helm</li>
-                        <li>Terraform</li>
-                        <li>Jenkins</li>
-                        <li>Ansible</li>
-                        <li>GitHub Actions</li>
-                        <li>Infrastructure as Code (IaC)</li>
-                        <li>CI/CD Pipelines</li>
-                    </ul>
-                </li>
-                <li>Machine Learning & MLOps
-                    <ul class="skills-sublist">
-                        <li>scikit-learn</li>
-                        <li>TensorFlow</li>
-                        <li>PyTorch</li>
-                        <li>Amazon SageMaker</li>
-                        <li>Model Deployment</li>
-                        <li>Feature Engineering</li>
-                        <li>Model Monitoring</li>
-                        <li>A/B Testing</li>
-                        <li>Experiment Tracking (MLflow)</li>
-                    </ul>
-                </li>
-                <li>Analytics & Visualization
-                    <ul class="skills-sublist">
-                        <li>Pandas</li>
-                        <li>NumPy</li>
-                        <li>Tableau</li>
-                        <li>Power BI</li>
-                        <li>Matplotlib</li>
-                        <li>Seaborn</li>
-                        <li>Plotly</li>
-                        <li>KPI Dashboards</li>
-                        <li>Statistical Analysis</li>
-                        <li>Data Storytelling</li>
-                    </ul>
-                </li>
-                <li>Testing & Quality Assurance
-                    <ul class="skills-sublist">
-                        <li>PyTest</li>
-                        <li>Selenium</li>
-                        <li>Unit Testing</li>
-                        <li>Integration Testing</li>
-                        <li>TDD/BDD</li>
-                        <li>Debugging</li>
-                        <li>Code Review</li>
-                    </ul>
-                </li>
-                <li>Methodologies & Architecture
-                    <ul class="skills-sublist">
-                        <li>Agile/Scrum</li>
-                        <li>Kanban</li>
-                        <li>REST API Design</li>
-                        <li>OOP</li>
-                        <li>MVC/MVT Architecture</li>
-                        <li>Microservices Architecture</li>
-                        <li>Event-Driven Architecture</li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="col-md-4 mt-4 mt-md-0 icon-box" style="padding-bottom:5px;">
+          <img style="padding:5px;" src="assets/img/projects/iot_health.jpg" class="img-fluid" width="300" height="300" alt="IoT Health">
+          <h5 style="padding:5px;color:#12d640"><strong>IoT Health Monitoring</strong></h5>
+          <p style="padding:0 2px;color:#fff;">Kinesis + Lambda ingesting 1M+ sensor events/day. Python anomaly detection hit 92% accuracy; React dashboards showed live vitals & alerts.</p>
         </div>
-    </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="container">
-            <div class="project-item">
-                <h3>Fraud Detection & Prevention System</h3>
-                <ul>
-                    <li>Developed PySpark and Snowflake workflows with scikit-learn models to scan 10TB+ transaction data daily, lowering fraudulent activity by 30% through predictive scoring.</li>
-                    <li>Automated AWS SageMaker deployments with CI/CD pipelines, shortening release cycles from two weeks to three days while ensuring model reproducibility.</li>
-                    <li>Connected FastAPI microservices to live Power BI dashboards, giving fraud teams real-time insight into transaction anomalies and risk scores.</li>
-                </ul>
-            </div>
-            <div class="project-item">
-                <h3>IoT Health Monitoring Platform</h3>
-                <ul>
-                    <li>Implemented AWS Kinesis and Lambda pipelines for ingesting 1M+ sensor events daily, ensuring low-latency data flow to hospital analytics systems.</li>
-                    <li>Applied Python-based anomaly detection algorithms to identify early signs of health deterioration, achieving 92% classification accuracy.</li>
-                    <li>Built React.js interfaces displaying live patient vitals, enabling medical teams to act on alerts instantly.</li>
-                </ul>
-            </div>
-            <div class="project-item">
-                <h3>Real-Time Language Translator AI App</h3>
-                <ul>
-                    <li>Created a multilingual translation engine with Whisper API, Flask, and React Native, supporting 12 languages under 300ms latency for spoken text.</li>
-                    <li>Set up automated PyTest pipelines to maintain translation accuracy within 0.2% deviation during updates.</li>
-                    <li>Deployed AWS Lambda and API Gateway backend for scalable, cost-efficient real-time processing.</li>
-                </ul>
-            </div>
+        <div class="col-md-4 mt-4 mt-md-0 icon-box" style="padding-bottom:5px;">
+          <img style="padding:5px;" src="assets/img/projects/translator.jpg" class="img-fluid" width="300" height="300" alt="Translator">
+          <h5 style="padding:5px;color:#12d640"><strong>Real‑Time Translator AI</strong></h5>
+          <p style="padding:0 2px;color:#fff;">Whisper API + Flask + React Native; 12 languages with &lt;300ms latency. PyTest guardrails kept drift ≤0.2%. Deployed on Lambda + API Gateway.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="container">
-            <p>Location: Santa Clara, CA</p>
-            <p>Phone: +1 629-273-8318</p>
-            <p>Email: ronith0306@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ronith-reddy-prodduturi">www.linkedin.com/in/ronith-reddy-prodduturi</a> (update with actual link if different)</p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+  <!-- ======= Skills ======= -->
+  <section id="skills" class="services reveal-up">
+    <div class="container">
+      <div class="section-title"><h2>Skills</h2></div>
+
+      <div class="col-md-12 mt-2">
+        <p style="color:#cfd8dc;">
+          <strong>Core:</strong> Python • SQL • PySpark • Apache Spark • AWS • ETL/ELT • MLOps • CI/CD • Kafka • Docker • Kubernetes • Terraform • MLflow • Tableau/Power BI
+        </p>
+      </div>
+
+      <div class="col-md-12 mt-3 icon-box">
+        <h4 style="text-align:left;color:#12d640;">Technical Stack</h4>
+        <ul style="columns:2;text-align:left;">
+          <li><strong>Programming & Frameworks:</strong> Python, SQL, PySpark, Apache Spark, Django, Flask, FastAPI, JS/TS, React.js, Node.js, C++, HTML5/CSS3, Bootstrap</li>
+          <li><strong>Data Eng & Big Data:</strong> ETL/ELT, Data Lakes, Warehousing, Snowflake, Redshift, BigQuery, Airflow, AWS Glue, Kafka, Batch & Streaming</li>
+          <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, DynamoDB, Redis, Oracle, SQL Server, NoSQL</li>
+          <li><strong>Cloud & DevOps:</strong> AWS (ECS, Lambda, S3, CloudFront, API Gateway, SageMaker), Azure DevOps, Docker, Kubernetes, Helm, Terraform, Jenkins, Ansible, GitHub Actions, IaC, CI/CD</li>
+          <li><strong>ML & MLOps:</strong> scikit‑learn, TensorFlow, PyTorch, SageMaker, Feature Eng, Model Deployment, Monitoring, A/B Testing, MLflow</li>
+          <li><strong>Analytics & Viz:</strong> Pandas, NumPy, Tableau, Power BI, Matplotlib, Seaborn, Plotly, KPI Dashboards, Statistical Analysis</li>
+          <li><strong>Testing & QA:</strong> PyTest, Selenium, Unit/Integration Testing, TDD/BDD, Debugging, Code Review</li>
+          <li><strong>Methods & Architecture:</strong> Agile/Scrum, Kanban, REST, OOP, MVC/MVT, Microservices, Event‑Driven Architecture</li>
+        </ul>
+      </div>
+
+      <div class="col-md-12 mt-3 icon-box">
+        <h4 style="text-align:left;color:#12d640;">Certifications</h4>
+        <ul style="text-align:left;">
+          <li>AWS Certified Data Engineer – Associate</li>
+          <li>AWS Certified Solutions Architect – Associate</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Education ======= -->
+  <section id="education" class="services reveal-up">
+    <div class="container">
+      <div class="section-title"><h2>Education</h2></div>
+
+      <div class="col-md-12 mt-2 icon-box">
+        <img src="assets/img/education/lindsey_wilson.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90" alt="Lindsey Wilson">
+        <h4 style="text-align:left;"><span style="color:#12d640">Lindsey Wilson University</span></h4>
+        <h5 style="text-align:left;"><em>Master of Science in Technology Management</em></h5>
+        <span class="left" style="float:left;color:#fff;"><em>Aug 2023 – Dec 2024</em></span>
+        <span class="right" style="float:right;color:#fff;"><em>Kentucky, USA</em></span><br><br>
+      </div>
+
+      <div class="col-md-12 mt-4 icon-box">
+        <img src="assets/img/education/gitam.png" class="img-fluid" style="float:left;margin:0 10px 0 0;" width="90" alt="GITAM">
+        <h4 style="text-align:left;"><span style="color:#12d640">GITAM University</span></h4>
+        <h5 style="text-align:left;"><em>Bachelor of Technology in Computer Science</em></h5>
+        <span class="left" style="float:left;color:#fff;"><em>Jun 2018 – Jun 2022</em></span>
+        <span class="right" style="float:right;color:#fff;"><em>India</em></span><br><br>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Contact ======= -->
+  <section id="contact" class="contact reveal-up">
+    <div class="container">
+      <div class="section-title"><h2>Contact</h2></div>
+
+      <div class="row">
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3 style="color:#12d640;">Social Profiles</h3>
+            <div class="social-links">
+              <a href="mailto:ronith0306@gmail.com" target="_blank" class="gmail"><i class="bx bxl-google"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2025 Ronith Reddy Prodduturi. All rights reserved.</p>
-    </footer>
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3 style="color:#12d640;">Email</h3>
+            <a href="mailto:ronith0306@gmail.com" target="_blank"><p><i class="icofont-rounded-right"></i> ronith0306@gmail.com</p></a>
+            <h3 style="color:#12d640;" class="mt-3">Phone</h3>
+            <a href="tel:+16292738318" target="_blank"><p><i class="icofont-rounded-right"></i> +1 (629) 273‑8318</p></a>
+            <p class="mt-2">Santa Clara, CA</p>
+          </div>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <!-- Netlify Forms version (no PHP needed) -->
+      <form name="contact" method="POST" data-netlify="true" action="/thanks.html" class="php-email-form mt-4">
+        <input type="hidden" name="form-name" value="contact" />
+        <div style="display:none">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <script type="text/javascript">
+    // Headline typing roles
+    var typed = new Typed('.typing',{
+      strings: ["a Data Engineer", "a Machine Learning Engineer", "a Full‑Stack Python Developer"],
+      loop: true,
+      typeSpeed: 85,
+      backSpeed: 85
+    });
+  </script>
+
+  <!-- Enhancements: splash + reveal + parallax + video autostart -->
+  <script>
+    // Background video start asap
+    const bgVid = document.querySelector('.background-image');
+    if (bgVid) {
+      const start = () => bgVid.play().catch(()=>{});
+      if (bgVid.readyState >= 2) start();
+      else bgVid.addEventListener('canplay', start, { once: true });
+    }
+
+    // Splash control
+    document.addEventListener('DOMContentLoaded', () => {
+      const splash = document.getElementById('splash');
+      setTimeout(() => { splash.classList.add('hide'); }, 1600); // tweak duration if desired
+    });
+
+    // Scroll reveal
+    const revealTargets = [
+      ...document.querySelectorAll('.icon-box'),
+      ...document.querySelectorAll('.info-box'),
+      ...document.querySelectorAll('.section-title'),
+      ...document.querySelectorAll('#experience li'),
+      ...document.querySelectorAll('#projects .icon-box'),
+      ...document.querySelectorAll('#skills .icon-box'),
+      ...document.querySelectorAll('header .reveal-up'),
+      ...document.querySelectorAll('section.reveal-up')
+    ];
+    revealTargets.forEach(el => el.classList.add('reveal-up'));
+    document.querySelectorAll('img, video').forEach(el => el.classList.add('reveal-fade'));
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealTargets.forEach(el => io.observe(el));
+    document.querySelectorAll('.reveal-fade').forEach(el => io.observe(el));
+
+    // Parallax
+    if (bgVid) {
+      bgVid.classList.add('parallax');
+      window.addEventListener('scroll', () => {
+        const offset = window.scrollY * 0.06;
+        bgVid.style.transform = `translateY(${offset}px)`;
+      }, { passive: true });
+    }
+  </script>
+
+  <!-- Main Template JS -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
