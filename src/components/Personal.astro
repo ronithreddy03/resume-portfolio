@@ -1,0 +1,109 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section id="personal" class="p-8 sm:p-12 md:p-16 lg:p-24 bg-gradient-to-br from-gray-50 to-blue-50">
+  <div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+      <div class="lg:col-span-4 animate-fade-in-left">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+          Personal
+        </h2>
+        <div class="w-[75px] h-[5px] mt-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-600"></div>
+        <p class="mt-4 text-lg text-gray-600">
+          The human side of the technician
+        </p>
+      </div>
+
+      <div class="lg:col-span-8 animate-fade-in-right">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Personal Philosophy -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900">Philosophy</h3>
+            </div>
+            <p class="text-gray-600 italic text-lg leading-relaxed">
+              "I believe technology should make life simpler, not more complex"
+            </p>
+          </div>
+
+          <!-- Personal Interests -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-gradient-to-r from-green-500 to-teal-600 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900">Interests</h3>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="text-2xl">🎵</span>
+                <span class="text-gray-600">EDM concerts and music production</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-2xl">🏃‍♂️</span>
+                <span class="text-gray-600">Fitness and outdoor activities</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-2xl">📚</span>
+                <span class="text-gray-600">Learning new technologies</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fun Facts -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900">Fun Facts</h3>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-start gap-2">
+                <span class="text-yellow-500 mt-1">⚡</span>
+                <span class="text-gray-600">I can identify server hardware by sound</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-yellow-500 mt-1">🔧</span>
+                <span class="text-gray-600">I've racked over 500+ servers in my career</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-yellow-500 mt-1">🌙</span>
+                <span class="text-gray-600">I once fixed a critical issue at 3 AM while listening to EDM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal Story -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900">My Journey</h3>
+            </div>
+            <p class="text-gray-600 leading-relaxed">
+              From fixing computers in my dorm room to managing enterprise data centers, 
+              my passion for technology has always been driven by curiosity and the desire 
+              to solve complex problems. When I'm not racking servers or troubleshooting 
+              network issues, you'll find me at EDM concerts or exploring new technologies 
+              that push the boundaries of what's possible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
