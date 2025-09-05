@@ -1,0 +1,250 @@
+---
+import { siteConfig } from "../config";
+
+// Calculate current age dynamically with precise time
+const birthDate = new Date('2001-06-03'); // June 3, 2001
+const today = new Date();
+const ageInMilliseconds = today.getTime() - birthDate.getTime();
+const ageInYears = ageInMilliseconds / (365.25 * 24 * 60 * 60 * 1000);
+const age = ageInYears.toFixed(12); // Show 12 decimal places for extreme precision including milliseconds
+---
+
+<section id="stats" class="p-8 sm:p-12 md:p-16 lg:p-24 bg-gray-50">
+  <div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+      <div class="lg:col-span-4 animate-fade-in-left">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+          Stats
+        </h2>
+        <div
+          class="w-[75px] h-[5px] mt-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600"
+        />
+        <p class="mt-4 text-lg text-gray-600">
+          Some stats about me
+        </p>
+      </div>
+
+      <div class="lg:col-span-8 animate-fade-in-right">
+        <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300">
+          <div class="space-y-4">
+            <!-- Current Age -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-100">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Current age</div>
+                  <div class="text-xs text-gray-500">Live updates with millisecond precision</div>
+                </div>
+              </div>
+              <div class="text-2xl font-bold text-blue-600" id="live-age">{age}</div>
+            </div>
+
+            <!-- Experience -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-100">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2V6"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Experience</div>
+                  <div class="text-xs text-gray-500">Years in data center operations</div>
+                </div>
+              </div>
+              <div class="text-2xl font-bold text-green-600">3+</div>
+            </div>
+
+            <!-- Location -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-100">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Location</div>
+                  <div class="text-xs text-gray-500">Current city</div>
+                </div>
+              </div>
+              <div class="text-lg font-bold text-purple-600">Los Angeles, CA</div>
+            </div>
+
+            <!-- Servers -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-100">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Servers</div>
+                  <div class="text-xs text-gray-500">Racked & stacked</div>
+                </div>
+              </div>
+              <div class="text-2xl font-bold text-orange-600">150+</div>
+            </div>
+
+            <!-- Downtime Reduction -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-100">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Efficiency</div>
+                  <div class="text-xs text-gray-500">Downtime reduction achieved</div>
+                </div>
+              </div>
+              <div class="text-2xl font-bold text-red-600">20%</div>
+            </div>
+
+            <!-- Clients -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-100">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Clients</div>
+                  <div class="text-xs text-gray-500">Broadband served</div>
+                </div>
+              </div>
+              <div class="text-2xl font-bold text-indigo-600">100+</div>
+            </div>
+
+            <!-- Dashboards -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-100">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Dashboards</div>
+                  <div class="text-xs text-gray-500">Interactive built</div>
+                </div>
+              </div>
+              <div class="text-2xl font-bold text-teal-600">5+</div>
+            </div>
+
+            <!-- Automation -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-100">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Automation</div>
+                  <div class="text-xs text-gray-500">Hours saved weekly</div>
+                </div>
+              </div>
+              <div class="text-2xl font-bold text-pink-600">8-10</div>
+            </div>
+
+            <!-- Outages -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-100">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Outages</div>
+                  <div class="text-xs text-gray-500">Monthly resolved</div>
+                </div>
+              </div>
+              <div class="text-2xl font-bold text-yellow-600">25+</div>
+            </div>
+
+            <!-- Availability -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-100">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Uptime</div>
+                  <div class="text-xs text-gray-500">Equipment availability</div>
+                </div>
+              </div>
+              <div class="text-2xl font-bold text-emerald-600">95%</div>
+            </div>
+
+            <!-- Resolution Time -->
+            <div class="flex items-center justify-between py-3 border-b border-gray-100">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-cyan-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Speed</div>
+                  <div class="text-xs text-gray-500">Average resolution time</div>
+                </div>
+              </div>
+              <div class="text-2xl font-bold text-cyan-600">30 min</div>
+            </div>
+
+            <!-- Cables -->
+            <div class="flex items-center justify-between py-3">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-violet-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-base font-semibold text-gray-900">Cables</div>
+                  <div class="text-xs text-gray-500">Organized (and counting!)</div>
+                </div>
+              </div>
+              <div class="text-2xl font-bold text-violet-600">∞</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Live age calculation with real-time updates including milliseconds
+  function updateLiveAge() {
+    const birthDate = new Date('2001-06-03'); // June 3, 2001
+    const now = new Date();
+    const ageInMilliseconds = now.getTime() - birthDate.getTime();
+    const ageInYears = ageInMilliseconds / (365.25 * 24 * 60 * 60 * 1000);
+    const age = ageInYears.toFixed(12); // Show 12 decimal places for extreme precision including milliseconds
+    
+    const ageElement = document.getElementById('live-age');
+    if (ageElement) {
+      ageElement.textContent = age;
+    }
+  }
+
+  // Update immediately
+  updateLiveAge();
+  
+  // Update every 100ms for millisecond precision
+  setInterval(updateLiveAge, 100);
+</script>

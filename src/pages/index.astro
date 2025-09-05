@@ -2,6 +2,10 @@
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
+import Stats from "../components/Stats.astro";
+import Skills from "../components/Skills.astro";
+import Personal from "../components/Personal.astro";
+import ScrollToTop from "../components/ScrollToTop.astro";
 import Projects from "../components/Projects.astro";
 import Experience from "../components/Experience.astro";
 import Education from "../components/Education.astro";
@@ -30,10 +34,14 @@ import "../styles/global.css";
     <section>
       <Hero />
       <About />
-      <Projects />
       <Experience />
+      <Skills />
       <Education />
+      <Projects />
+      <Personal />
+      <Stats />
     </section>
     <Footer />
+    <ScrollToTop />
   </body>
 </html>

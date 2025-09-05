@@ -8,17 +8,16 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
     <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24">
       <div>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
-          <div class="lg:col-span-4">
+          <div class="lg:col-span-4 animate-fade-in-left">
             <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
               Projects
             </h2>
             <div
-              class="w-[75px] h-[5px] mt-2 rounded-full"
-              style={`background-color: ${siteConfig.accentColor}`}
+              class="w-[75px] h-[5px] mt-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600"
             />
           </div>
 
-          <div class="lg:col-span-8">
+          <div class="lg:col-span-8 animate-fade-in-right">
             <div class="space-y-8">
               {siteConfig.projects.map((project, index) => {
                 const Component = project.link ? "a" : "div";
@@ -31,12 +30,12 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                   : {};
 
                 return (
-                  <div class="group relative">
+                  <div class="group relative animate-fade-in-up" style={`animation-delay: ${index * 0.2}s`}>
                     <Component
                       {...linkProps}
-                      class={`block relative p-4 sm:p-6 md:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 ${
+                      class={`block relative p-4 sm:p-6 md:p-8 bg-gradient-to-br from-gray-50 to-white rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 card-hover ${
                         project.link
-                          ? "hover:bg-white hover:shadow-xl hover:border-gray-300 hover:-translate-y-1"
+                          ? "hover:shadow-2xl hover:border-gray-300 hover:-translate-y-2"
                           : ""
                       }`}
                     >

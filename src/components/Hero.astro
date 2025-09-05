@@ -132,26 +132,55 @@ import { siteConfig } from "../config";
   <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center">
     <div>
       <h2
-        class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in"
+        class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in-up"
       >
         Hello! 👋
       </h2>
       <h1
-        class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200"
+        class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in-up animation-delay-200"
       >
-        I'm <span style={{ color: siteConfig.accentColor }}
+        I'm <span class="bg-gradient-to-r from-green-500 to-blue-600 bg-clip-text text-transparent"
           >{siteConfig.name}</span
         >
       </h1>
-      <p
-        class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400"
-      >
-        {siteConfig.title}
-      </p>
+      <div class="mt-4 sm:mt-6 md:mt-8 animate-fade-in-up animation-delay-400">
+        <p class="text-pretty text-sm sm:text-base md:text-lg font-medium text-gray-500 mb-2 animate-pulse-slow">
+          🎯 Turning complex problems into simple solutions
+        </p>
+        <p class="text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600">
+          {siteConfig.title}
+        </p>
+      </div>
+      
+      <!-- Download Resume Button -->
+      <div class="mt-6 sm:mt-8 md:mt-10 animate-fade-in-up animation-delay-500">
+        <a
+          href={siteConfig.resume}
+          download
+          class="btn-primary hover-lift hover-glow"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7,10 12,15 17,10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Download Resume
+        </a>
+      </div>
     </div>
   </div>
   <div
-    class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600"
+    class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in-up animation-delay-600"
   >
     {
       siteConfig.social?.email && (
